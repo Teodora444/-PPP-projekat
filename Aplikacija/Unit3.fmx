@@ -1,0 +1,226 @@
+object DetaljiNaloga: TDetaljiNaloga
+  Left = 551
+  Top = 0
+  Caption = 'DetaljiNaloga'
+  ClientHeight = 840
+  ClientWidth = 392
+  Fill.Color = xFFE5BDF2
+  Fill.Kind = Solid
+  Position = Designed
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  OnCreate = FormCreate
+  Left = 551
+  DesignerMasterStyle = 0
+  object imgProizvod: TImageControl
+    Position.X = 205.000000000000000000
+    Position.Y = 118.000000000000000000
+    Size.Width = 163.000000000000000000
+    Size.Height = 153.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 0
+  end
+  object lblID: TLabel
+    Position.X = 24.000000000000000000
+    Position.Y = 88.000000000000000000
+    Size.Width = 97.000000000000000000
+    Size.Height = 17.000000000000000000
+    Size.PlatformDefault = False
+    Text = 'Naziv proizvoda:'
+    TabOrder = 1
+  end
+  object Label1: TLabel
+    StyledSettings = [Family, FontColor]
+    Position.X = 56.000000000000000000
+    Position.Y = 16.000000000000000000
+    Size.Width = 249.000000000000000000
+    Size.Height = 40.000000000000000000
+    Size.PlatformDefault = False
+    TextSettings.Font.Size = 30.000000000000000000
+    TextSettings.Font.StyleExt = {00070000000000000004000000}
+    Text = 'Proizvodni nalog'
+    TabOrder = 2
+  end
+  object lblNalogID: TLabel
+    StyledSettings = [Family, FontColor]
+    Position.X = 313.000000000000000000
+    Position.Y = 16.000000000000000000
+    Size.Width = 32.000000000000000000
+    Size.Height = 40.000000000000000000
+    Size.PlatformDefault = False
+    TextSettings.Font.Size = 30.000000000000000000
+    TextSettings.Font.StyleExt = {00070000000000000004000000}
+    Text = '?'
+    TabOrder = 3
+  end
+  object lblNazivProizvoda: TLabel
+    StyledSettings = [Family, Style, FontColor]
+    Position.X = 129.000000000000000000
+    Position.Y = 88.000000000000000000
+    Size.Width = 169.000000000000000000
+    Size.Height = 17.000000000000000000
+    Size.PlatformDefault = False
+    TextSettings.Font.Size = 15.000000000000000000
+    Text = 'lblNazivProizvoda'
+    TabOrder = 4
+  end
+  object lblKolicina: TLabel
+    StyledSettings = [Family, Style, FontColor]
+    Position.X = 77.000000000000000000
+    Position.Y = 168.000000000000000000
+    TextSettings.Font.Size = 15.000000000000000000
+    Text = 'lblKolicina'
+    TabOrder = 5
+  end
+  object lblRok: TLabel
+    StyledSettings = [Family, Style, FontColor]
+    Position.X = 56.000000000000000000
+    Position.Y = 217.000000000000000000
+    TextSettings.Font.Size = 15.000000000000000000
+    Text = 'lblRok'
+    TabOrder = 6
+  end
+  object Label3: TLabel
+    Position.X = 24.000000000000000000
+    Position.Y = 168.000000000000000000
+    Size.Width = 65.000000000000000000
+    Size.Height = 17.000000000000000000
+    Size.PlatformDefault = False
+    Text = 'Koli'#269'ina:'
+    TabOrder = 7
+  end
+  object Label4: TLabel
+    Position.X = 24.000000000000000000
+    Position.Y = 217.000000000000000000
+    Size.Width = 65.000000000000000000
+    Size.Height = 17.000000000000000000
+    Size.PlatformDefault = False
+    Text = 'Rok:'
+    TabOrder = 8
+  end
+  object MemoReceptura: TMemo
+    Touch.InteractiveGestures = [Pan, LongTap, DoubleTap]
+    DataDetectorTypes = []
+    Position.X = 24.000000000000000000
+    Position.Y = 304.000000000000000000
+    Size.Width = 344.000000000000000000
+    Size.Height = 57.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 9
+    Viewport.Width = 344.000000000000000000
+    Viewport.Height = 57.000000000000000000
+  end
+  object Label5: TLabel
+    StyledSettings = [Family, Style, FontColor]
+    Position.X = 161.000000000000000000
+    Position.Y = 279.000000000000000000
+    TextSettings.Font.Size = 15.000000000000000000
+    Text = 'Receptura:'
+    TabOrder = 10
+  end
+  object lvFaze: TListView
+    ItemAppearanceClassName = 'TListItemAppearance'
+    ItemEditAppearanceClassName = 'TListItemDeleteAppearance'
+    HeaderAppearanceClassName = 'TListHeaderObjects'
+    FooterAppearanceClassName = 'TListHeaderObjects'
+    Position.X = 24.000000000000000000
+    Position.Y = 376.000000000000000000
+    Size.Width = 240.000000000000000000
+    Size.Height = 352.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 11
+  end
+  object Button1: TButton
+    StyledSettings = [Family, Size, FontColor]
+    Position.X = 288.000000000000000000
+    Position.Y = 384.000000000000000000
+    StyleLookup = 'Button1Style1'
+    TabOrder = 12
+    Text = 'Uputstvo '
+    TextSettings.Font.StyleExt = {00070000000000000004000000}
+    TextSettings.Trimming = None
+    OnClick = UputstvoButtonClick
+  end
+  object Button2: TButton
+    StyledSettings = [Family, Size, FontColor]
+    Position.X = 288.000000000000000000
+    Position.Y = 430.000000000000000000
+    TabOrder = 13
+    Text = 'Uputstvo '
+    TextSettings.Font.StyleExt = {00070000000000000004000000}
+    TextSettings.Trimming = None
+    OnClick = UputstvoButtonClick
+  end
+  object Button3: TButton
+    StyledSettings = [Family, Size, FontColor]
+    Position.X = 288.000000000000000000
+    Position.Y = 476.000000000000000000
+    TabOrder = 14
+    Text = 'Uputstvo '
+    TextSettings.Font.StyleExt = {00070000000000000004000000}
+    TextSettings.Trimming = None
+    OnClick = UputstvoButtonClick
+  end
+  object Button4: TButton
+    StyledSettings = [Family, Size, FontColor]
+    Position.X = 288.000000000000000000
+    Position.Y = 514.000000000000000000
+    TabOrder = 15
+    Text = 'Uputstvo '
+    TextSettings.Font.StyleExt = {00070000000000000004000000}
+    TextSettings.Trimming = None
+    OnClick = UputstvoButtonClick
+  end
+  object Button5: TButton
+    StyledSettings = [Family, Size, FontColor]
+    Position.X = 288.000000000000000000
+    Position.Y = 560.000000000000000000
+    TabOrder = 16
+    Text = 'Uputstvo '
+    TextSettings.Font.StyleExt = {00070000000000000004000000}
+    TextSettings.Trimming = None
+    OnClick = UputstvoButtonClick
+  end
+  object Button6: TButton
+    StyledSettings = [Family, Size, FontColor]
+    Position.X = 288.000000000000000000
+    Position.Y = 606.000000000000000000
+    TabOrder = 17
+    Text = 'Uputstvo '
+    TextSettings.Font.StyleExt = {00070000000000000004000000}
+    TextSettings.Trimming = None
+    OnClick = UputstvoButtonClick
+  end
+  object Button7: TButton
+    StyledSettings = [Family, Size, FontColor]
+    Position.X = 288.000000000000000000
+    Position.Y = 652.000000000000000000
+    TabOrder = 18
+    Text = 'Uputstvo '
+    TextSettings.Font.StyleExt = {00070000000000000004000000}
+    TextSettings.Trimming = None
+    OnClick = UputstvoButtonClick
+  end
+  object Button8: TButton
+    StyledSettings = [Family, Size, FontColor]
+    Position.X = 288.000000000000000000
+    Position.Y = 698.000000000000000000
+    TabOrder = 19
+    Text = 'Uputstvo '
+    TextSettings.Font.StyleExt = {00070000000000000004000000}
+    TextSettings.Trimming = None
+    OnClick = UputstvoButtonClick
+  end
+  object btnNazad: TButton
+    Position.X = 24.000000000000000000
+    Position.Y = 736.000000000000000000
+    Size.Width = 113.000000000000000000
+    Size.Height = 33.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 20
+    Text = 'Nazad'
+    TextSettings.Trimming = None
+    OnClick = btnNazadClick
+  end
+end

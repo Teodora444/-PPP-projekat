@@ -1,0 +1,162 @@
+object Izvestaj: TIzvestaj
+  Left = 551
+  Top = 0
+  Caption = 'Form5'
+  ClientHeight = 840
+  ClientWidth = 392
+  Fill.Color = xFFE5BDF2
+  Fill.Kind = Solid
+  Position = Designed
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  OnCreate = FormCreate
+  Left = 551
+  DesignerMasterStyle = 0
+  object Label1: TLabel
+    StyledSettings = [Family, FontColor]
+    Position.X = 144.000000000000000000
+    Position.Y = 32.000000000000000000
+    Size.Width = 112.000000000000000000
+    Size.Height = 41.000000000000000000
+    Size.PlatformDefault = False
+    TextSettings.Font.Size = 30.000000000000000000
+    TextSettings.Font.StyleExt = {00070000000000000004000000}
+    Text = 'Izve'#353'taj'
+    TabOrder = 0
+  end
+  object Label2: TLabel
+    StyledSettings = [Family, Style, FontColor]
+    Position.X = 40.000000000000000000
+    Position.Y = 128.000000000000000000
+    TextSettings.Font.Size = 15.000000000000000000
+    Text = 'RadnikID:'
+    TabOrder = 1
+    object lblRadnikID: TLabel
+      StyledSettings = [Family, Style, FontColor]
+      Position.X = 88.000000000000000000
+      Position.Y = -8.000000000000000000
+      Size.Width = 128.000000000000000000
+      Size.Height = 33.000000000000000000
+      Size.PlatformDefault = False
+      TextSettings.Font.Size = 25.000000000000000000
+      Text = 'lblRadnikID'
+      TabOrder = 3
+    end
+  end
+  object Label3: TLabel
+    StyledSettings = [Family, Style, FontColor]
+    Position.X = 40.000000000000000000
+    Position.Y = 216.000000000000000000
+    Size.Width = 120.000000000000000000
+    Size.Height = 25.000000000000000000
+    Size.PlatformDefault = False
+    TextSettings.Font.Size = 15.000000000000000000
+    Text = 'Broj dobrih:'
+    TabOrder = 2
+  end
+  object Button1: TButton
+    StyledSettings = [Family, Style, FontColor]
+    Position.X = 88.000000000000000000
+    Position.Y = 696.000000000000000000
+    Size.Width = 224.000000000000000000
+    Size.Height = 57.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 3
+    Text = 'Po'#353'alji izve'#353'taj'
+    TextSettings.Font.Size = 15.000000000000000000
+    TextSettings.Trimming = None
+    OnClick = Button1Click
+  end
+  object Edit1: TEdit
+    Touch.InteractiveGestures = [LongTap, DoubleTap]
+    TabOrder = 4
+    Position.X = 168.000000000000000000
+    Position.Y = 216.000000000000000000
+    Size.Width = 57.000000000000000000
+    Size.Height = 25.000000000000000000
+    Size.PlatformDefault = False
+  end
+  object Edit2: TEdit
+    Touch.InteractiveGestures = [LongTap, DoubleTap]
+    TabOrder = 5
+    Position.X = 168.000000000000000000
+    Position.Y = 264.000000000000000000
+    Size.Width = 57.000000000000000000
+    Size.Height = 25.000000000000000000
+    Size.PlatformDefault = False
+  end
+  object Label4: TLabel
+    StyledSettings = [Family, Style, FontColor]
+    Position.X = 40.000000000000000000
+    Position.Y = 264.000000000000000000
+    Size.Width = 120.000000000000000000
+    Size.Height = 25.000000000000000000
+    Size.PlatformDefault = False
+    TextSettings.Font.Size = 15.000000000000000000
+    Text = 'Broj odba'#269'enih:'
+    TabOrder = 6
+  end
+  object Memo1: TMemo
+    Touch.InteractiveGestures = [Pan, LongTap, DoubleTap]
+    DataDetectorTypes = []
+    Position.X = 128.000000000000000000
+    Position.Y = 511.000000000000000000
+    Size.Width = 224.000000000000000000
+    Size.Height = 153.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 7
+    Viewport.Width = 224.000000000000000000
+    Viewport.Height = 153.000000000000000000
+  end
+  object Label5: TLabel
+    StyledSettings = [Family, Style, FontColor]
+    Position.X = 40.000000000000000000
+    Position.Y = 176.000000000000000000
+    TextSettings.Font.Size = 15.000000000000000000
+    Text = 'ZaduzenjeID:'
+    TabOrder = 8
+  end
+  object lblZaduzenjeID: TLabel
+    StyledSettings = [Family, Style, FontColor]
+    Position.X = 144.000000000000000000
+    Position.Y = 153.000000000000000000
+    Size.Width = 185.000000000000000000
+    Size.Height = 55.000000000000000000
+    Size.PlatformDefault = False
+    TextSettings.Font.Size = 25.000000000000000000
+    Text = 'lblZaduzenjeID'
+    TabOrder = 9
+  end
+  object Label6: TLabel
+    StyledSettings = [Family, Style, FontColor]
+    Position.X = 56.000000000000000000
+    Position.Y = 511.000000000000000000
+    TextSettings.Font.Size = 15.000000000000000000
+    Text = 'Problemi:'
+    TabOrder = 10
+  end
+  object lvSirovine: TListView
+    ItemAppearanceClassName = 'TListItemRightDetailAppearance'
+    ItemEditAppearanceClassName = 'TListItemRightDetailDeleteAppearance'
+    HeaderAppearanceClassName = 'TListHeaderObjects'
+    FooterAppearanceClassName = 'TListHeaderObjects'
+    Position.X = 80.000000000000000000
+    Position.Y = 336.000000000000000000
+    Size.Width = 249.000000000000000000
+    Size.Height = 145.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 11
+  end
+  object Label7: TLabel
+    StyledSettings = [Family, Style, FontColor]
+    Position.X = 144.000000000000000000
+    Position.Y = 311.000000000000000000
+    Size.Width = 184.000000000000000000
+    Size.Height = 17.000000000000000000
+    Size.PlatformDefault = False
+    TextSettings.Font.Size = 15.000000000000000000
+    Text = 'Potro'#353'ene sirovine:'
+    TabOrder = 12
+  end
+end
